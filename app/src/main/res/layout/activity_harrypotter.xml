@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Harrypotter">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quizopedia!"
+        android:padding="15dp"
+        android:textSize="50dp"
+        android:fontFamily="@font/font4"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/quizheading"
+        android:textColor="#f33"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What was the Hero's Name"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/question"
+        android:textSize="20dp"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/answer1"
+        android:layout_marginEnd="37dp"
+        android:onClick="onclick"
+        android:text="submit"
+        />
+
+    <EditText
+        android:id="@+id/answer1"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/question"
+        android:layout_marginBottom="202dp" />
+
+</RelativeLayout>
